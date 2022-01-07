@@ -9,8 +9,11 @@
     a:hover {color:gray; font-family: sans-serif}
     a:visited {color:white; font-family: sans-serif}
     a:active {color:gray; font-family: sans-serif}
+    ul {color:white; font-family: sans-serif}
+    div {margin-left: 50px; margin-right: 50px;}
   </style>
   <body style="background-color:#33475b">
+  <div>
   <h1>Download site for master thesis</h1>
   <p>This is the download site for plugins as a part of a master thesis. The plugins should help Java students to
     find errors in their code. <br><br> <br>
@@ -31,18 +34,26 @@
   <hr>
   <h2 >Eclipse download</h2>
     <a href="Eclipse/master.thesis.eclipse.update.site.zip" >Eclipse plugin download</a>
-  <p >Download the zip file from the link above and unzip the file.
-    In Eclipse choose "Help -> Install New Software -> Add -> Local".
-    Choose the folder "master.thesis.eclipse.update.site" you downloaded earlier.
-    You may have to uncheck "Group items by categories" to choose the plugin for installation.
-    Accept the licence and finish the installation. </p>
+  <p >
+    <ul>
+      <li>Download the zip file from the link above and unzip the file.</li>
+      <li>In Eclipse choose "Help -> Install New Software -> Add -> Local".</li>
+      <li>Choose the folder "master.thesis.eclipse.update.site" you downloaded earlier.</li>
+      <li>You may have to uncheck "Group items by categories" to choose the plugin for installation.</li>
+      <li> Accept the licence and finish the installation. </li>
+    </ul>
+   </p>
   <img src="resources/download-eclipse.gif" alt="Demo of downloading eclipse plugin" />
   <hr>
   <h2>Intellij plugin download</h2>
     <a href="Intellij/master-thesis-intellij-plugin-0.0.1.zip" >Intellij download</a>
-  <p>Download the zip file from the link above (do not unzip it!).
-    In Intellij choose "Intellij IDEA -> Preferences -> Plugins -> Settings (the wheel) -> Install plugin from disk".
-    Choose the zip file "master-thesis-intellij.zip" you downloaded earlier.</p>
+  <p>
+  <ul>
+    <li>Download the zip file from the link above (do not unzip it!).</li>
+    <li>In Intellij choose "Intellij IDEA -> Preferences -> Plugins -> Settings (the wheel) -> Install plugin from disk".</li>
+    <li>Choose the zip file "master-thesis-intellij.zip" you downloaded earlier.</li>
+  </ul>
+    </p>
   <img src="resources/intellij-download.gif" alt="Demo of downloading intellij plugin" />
   <hr>
   <h2>Annotation download</h2>
@@ -60,5 +71,7 @@
     You may have to add "requires master.thesis.disable.warnings.annotations;" in
     module-info.java before you can use it.</p>
   <hr>
+  </div>
   </body>
+
 </html>
