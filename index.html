@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html>
+  <style>
+    p {color:white; font-family: sans-serif}
+    h1 {color:white; font-family: sans-serif}
+    h2 {color:white; font-family: sans-serif}
+    h3 {color:white; font-family: sans-serif}
+    a:link {color:white; font-family: sans-serif}
+    a:hover {color:gray; font-family: sans-serif}
+    a:visited {color:white; font-family: sans-serif}
+    a:active {color:gray; font-family: sans-serif}
+  </style>
   <body style="background-color:#33475b">
-  <h1 style="color:white;">Download site for master thesis</h1>
-  <p style="color:white;">This is the download site for plugins as a part of a master thesis. The plugins should help Java students to
+  <h1>Download site for master thesis</h1>
+  <p>This is the download site for plugins as a part of a master thesis. The plugins should help Java students to
     find errors in their code. <br><br> <br>
 
     The code and a demo for the plugins are available at github: <br> <br>
 
-    Eclipse: <a href="https://github.com/JennStro/master-thesis-eclipse" style="color:white;">https://github.com/JennStro/master-thesis-eclipse</a> <br>
-    Intellij: <a href="https://github.com/JennStro/master-thesis-intellij" style="color:white;">https://github.com/JennStro/master-thesis-intellij</a> <br> <br>
+    Eclipse: <a href="https://github.com/JennStro/master-thesis-eclipse">https://github.com/JennStro/master-thesis-eclipse</a> <br>
+    Intellij: <a href="https://github.com/JennStro/master-thesis-intellij" >https://github.com/JennStro/master-thesis-intellij</a> <br> <br>
 
     Both plugins use the Java Parser to analyse the code. The plugin analyses one file at a time, and analyses the file you
     currently have selected in your editor. <br><br>
 
-    Backend parser: <a href="https://github.com/JennStro/master-thesis-backend-analyser" style="color:white;">https://github.com/JennStro/master-thesis-backend-analyser</a><br><br>
+    Backend parser: <a href="https://github.com/JennStro/master-thesis-backend-analyser">https://github.com/JennStro/master-thesis-backend-analyser</a><br><br>
 
-    The project and plugins can be tested using a test project found at: <a href="https://github.com/JennStro/master-thesis-test-project" style="color:white;">https://github.com/JennStro/master-thesis-test-project</a> <br>
+    The project and plugins can be tested using a test project found at: <a href="https://github.com/JennStro/master-thesis-test-project" >https://github.com/JennStro/master-thesis-test-project</a> <br>
     The test project is created with Maven and can therefore be used across the IDEs. The project creates a file that logs the timestamp and if the task is completed or not.<br><br>
   </p>
   <hr>
-  <h2 style="color:white;">Eclipse download</h2>
-    <a href="Eclipse/master.thesis.eclipse.update.site.zip" style="color:white;">Eclipse plugin download</a>
-  <p style="color:white;">Download the zip file from the link above and unzip the file.
+  <h2 >Eclipse download</h2>
+    <a href="Eclipse/master.thesis.eclipse.update.site.zip" >Eclipse plugin download</a>
+  <p >Download the zip file from the link above and unzip the file.
     In Eclipse choose "Help -> Install New Software -> Add -> Local".
     Choose the folder "master.thesis.eclipse.update.site" you downloaded earlier.
     You may have to uncheck "Group items by categories" to choose the plugin for installation.
     Accept the licence and finish the installation. </p>
   <img src="resources/download-eclipse.gif" alt="Demo of downloading eclipse plugin" />
   <hr>
-  <h2 style="color:white;">Intellij plugin download</h2>
-    <a href="Intellij/master-thesis-intellij-plugin-0.0.1.zip" style="color:white;">Intellij download</a>
-  <p style="color:white;">Download the zip file from the link above (do not unzip it!).
+  <h2>Intellij plugin download</h2>
+    <a href="Intellij/master-thesis-intellij-plugin-0.0.1.zip" >Intellij download</a>
+  <p>Download the zip file from the link above (do not unzip it!).
     In Intellij choose "Intellij IDEA -> Preferences -> Plugins -> Settings (the wheel) -> Install plugin from disk".
     Choose the zip file "master-thesis-intellij.zip" you downloaded earlier.</p>
   <img src="resources/intellij-download.gif" alt="Demo of downloading intellij plugin" />
   <hr>
-  <h2 style="color:white;">Annotation download</h2>
-    <a href="Annotations/master-thesis-annotation.zip" style="color:white;">Annotations download</a>
-  <p style="color:white;">This download lets you use @annotations to disable some errors.</p>
-  <h3 style="color:white;">Intellij download</h3>
-    <p style="color:white;">Download the zip file from above and unzip it. In Intellij in your project, choose
+  <h2>Annotation download</h2>
+    <a href="Annotations/master-thesis-annotation.zip" >Annotations download</a>
+  <p>This download lets you use @annotations to disable some errors.</p>
+  <h3>Intellij download</h3>
+    <p>Download the zip file from above and unzip it. In Intellij in your project, choose
       "File -> Project Structure -> Modules -> Dependencies -> + -> From JAR or Directories" and the .jar file you downloaded.
       You may have to add "requires master.thesis.disable.warnings.annotations;" in
       module-info.java before you can use it.</p>
-  <h3 style="color:white;">Eclipse download</h3>
-  <p style="color:white;">Download the zip file from above and unzip it. In Eclipse right click on your project, choose
+  <h3>Eclipse download</h3>
+  <p>Download the zip file from above and unzip it. In Eclipse right click on your project, choose
     "Build Path -> Configure Build Path -> Libraries -> Modulepath -> Add External JARs -> and choose the .jar file you downloaded.
     You may have to add "requires master.thesis.disable.warnings.annotations;" in
     module-info.java before you can use it.</p>
